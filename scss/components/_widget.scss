@@ -1,28 +1,28 @@
 .widget {
     position: relative;
-    height: 40rem;
+    height: 50rem;
     margin: 8rem;
     &__img {
         position: absolute;
-        width: 18rem;
+        width: 21rem;
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .2);
         transform: translate(-50%, 0);
     }
 
     &__img--1 {
-        top: 8%;
-        left: 35%;
+        top: 5%;
+        left: 25%;
     }
 
     &__img--2 {
-        width: 21rem;
+        width: 24rem;
         top: 0;
         left: 50%;
         z-index: 30;
     }
 
     &__img--3 {
-        top: 8%;
-        left: 65%;
+        top: 5%;
+        left: 75%;
     }
 }

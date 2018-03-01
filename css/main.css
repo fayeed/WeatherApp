@@ -244,28 +244,28 @@ body {
 
 .widget {
   position: relative;
-  height: 40rem;
+  height: 50rem;
   margin: 8rem;
 }
 .widget__img {
   position: absolute;
-  width: 18rem;
+  width: 21rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   transform: translate(-50%, 0);
 }
 .widget__img--1 {
-  top: 8%;
-  left: 35%;
+  top: 5%;
+  left: 25%;
 }
 .widget__img--2 {
-  width: 21rem;
+  width: 24rem;
   top: 0;
   left: 50%;
   z-index: 30;
 }
 .widget__img--3 {
-  top: 8%;
-  left: 65%;
+  top: 5%;
+  left: 75%;
 }
 
 .screenshots__container {
@@ -278,7 +278,12 @@ body {
 .screenshots__img {
   width: 17rem;
   position: absolute;
-  left: 30%;
+}
+.screenshots__img--l {
+  left: 10%;
+}
+.screenshots__img--r {
+  right: 10%;
 }
 .screenshots__icon--1 {
   height: 5rem;
@@ -297,7 +302,7 @@ body {
   width: 6rem;
   position: absolute;
   top: 12rem;
-  right: 9rem;
+  right: 15rem;
   animation-name: movement-4;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -306,7 +311,7 @@ body {
   width: 5.5rem;
   position: absolute;
   top: 24rem;
-  left: 8rem;
+  left: 0rem;
   animation-name: movement-2;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -315,7 +320,7 @@ body {
   width: 6rem;
   position: absolute;
   top: 9rem;
-  right: 8rem;
+  right: 1rem;
   animation-name: movement-1;
   animation-duration: 15s;
   animation-iteration-count: infinite;
@@ -324,7 +329,7 @@ body {
   width: 5.5rem;
   position: absolute;
   top: 21rem;
-  left: 8.5rem;
+  left: 15rem;
   animation-name: movement-4;
   animation-duration: 6s;
   animation-iteration-count: infinite;
@@ -333,7 +338,7 @@ body {
   width: 5rem;
   position: absolute;
   top: 10rem;
-  right: 8rem;
+  right: 16rem;
   animation-name: movement-2;
   animation-duration: 6s;
   animation-iteration-count: infinite;
@@ -342,7 +347,7 @@ body {
   width: 5.5rem;
   position: absolute;
   top: 24rem;
-  left: 8rem;
+  left: 1rem;
   animation-name: movement-3;
   animation-duration: 9s;
   animation-iteration-count: infinite;
