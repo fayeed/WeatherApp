@@ -32,3 +32,17 @@ body {
     font-weight: 300;
     color: var(--color-gray-2);
 }
+
+.downloads {
+    &__main-text {
+        font-size: 2.8rem;
+        color: var(--color-white);
+        font-weight: 700;
+    }
+
+    &__sub-text {
+        font-size: 1.2rem;
+        color: var(--color-white);
+        font-weight: 300;
+    }
+ }

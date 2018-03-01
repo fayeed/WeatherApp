@@ -1,5 +1,7 @@
 .row {
     display: grid;
+    grid-column-gap: 5rem;
+    grid-row-gap: 10rem;
 
     &--80 {
         width: 80%;

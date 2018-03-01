@@ -1,0 +1,25 @@
+.footer {
+    padding: 4rem 0;
+    background-color: var(--color-dark-blue-1);
+    text-align: right;
+
+    &__text {
+        color: var(--color-dark-blue-4);
+        font-size: 1.2rem;
+        padding: 4rem 10% 4rem 0;
+    }
+}
+
+.fun {
+    color: var(--color-orange);
+}
+
+.weather {
+    color: var(--color-primary);
+}
+
+.line {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: .5px solid var(--color-dark-blue-4);
+}

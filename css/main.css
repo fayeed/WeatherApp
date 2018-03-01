@@ -108,6 +108,17 @@ body {
   color: var(--color-gray-2);
 }
 
+.downloads__main-text {
+  font-size: 2.8rem;
+  color: var(--color-white);
+  font-weight: 700;
+}
+.downloads__sub-text {
+  font-size: 1.2rem;
+  color: var(--color-white);
+  font-weight: 300;
+}
+
 .margin-top-small {
   margin-top: 2rem;
 }
@@ -353,8 +364,82 @@ body {
   animation-iteration-count: infinite;
 }
 
+.testimony {
+  text-align: left;
+  position: relative;
+}
+.testimony__quote {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.testimony__quote--1 {
+  position: absolute;
+  top: -5rem;
+  left: 0;
+}
+.testimony__quote--2 {
+  position: absolute;
+  top: 5rem;
+  left: 90%;
+}
+.testimony__main {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.testimony__cite {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.downloads {
+  width: 60%;
+  margin: 0 auto;
+}
+.downloads__btns {
+  display: flex;
+  justify-content: left;
+}
+.downloads__phones {
+  height: 6rem;
+  position: relative;
+  left: 30%;
+}
+.downloads__phones--1 {
+  filter: blur(0.3rem);
+  width: 16rem;
+  position: absolute;
+  top: 170%;
+  left: -12rem;
+  clip: rect(0, 16rem, 18rem, 0);
+}
+.downloads__phones--2 {
+  width: 17rem;
+  position: absolute;
+  top: 28%;
+  left: 0;
+  z-index: 50;
+  clip: rect(0, 17rem, 30rem, 0);
+}
+.downloads__phones--3 {
+  filter: blur(0.3rem);
+  width: 16rem;
+  position: absolute;
+  top: 170%;
+  left: 12rem;
+  clip: rect(0, 16rem, 18rem, 0);
+}
+
+.btn {
+  width: 14rem;
+  padding: 0;
+}
+
 .row {
   display: grid;
+  grid-column-gap: 5rem;
+  grid-row-gap: 10rem;
 }
 .row--80 {
   width: 80%;
@@ -446,6 +531,31 @@ body {
   animation-iteration-count: infinite;
 }
 
+.footer {
+  padding: 4rem 0;
+  background-color: var(--color-dark-blue-1);
+  text-align: right;
+}
+.footer__text {
+  color: var(--color-dark-blue-4);
+  font-size: 1.2rem;
+  padding: 4rem 10% 4rem 0;
+}
+
+.fun {
+  color: var(--color-orange);
+}
+
+.weather {
+  color: var(--color-primary);
+}
+
+.line {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 0.5px solid var(--color-dark-blue-4);
+}
+
 .section_features {
   text-align: center;
   width: 60%;
@@ -462,4 +572,16 @@ body {
   text-align: center;
   width: 60%;
   margin: 8rem auto;
+}
+
+.section_testimonials {
+  text-align: center;
+  width: 60%;
+  margin: 8rem auto;
+}
+
+.section_download {
+  padding: 5rem 0 5rem 0;
+  background-color: var(--color-primary);
+  overflow: hidden;
 }

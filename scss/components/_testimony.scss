@@ -1,0 +1,33 @@
+.testimony {
+    text-align: left;
+    position: relative;
+    &__quote {
+        font-size: 8rem;
+        font-weight: 700;
+        color: var(--color-primary);
+
+        &--1 {
+            position: absolute;
+            top: -5rem;
+            left: 0;
+        }
+
+        &--2 {
+            position: absolute;
+            top: 5rem;
+            left: 90%;
+        }
+    }
+
+    &__main {
+        font-size: 1.8rem;
+        font-weight: 300;
+
+    }
+
+    &__cite {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+}
