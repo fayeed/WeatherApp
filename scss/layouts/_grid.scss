@@ -1,0 +1,28 @@
+.row {
+    display: grid;
+
+    &--80 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    &--60 {
+        justify-content: center;
+    }
+
+    &--2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &--4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &--center {
+        justify-content: center;
+        align-items: center;
+    }
+}

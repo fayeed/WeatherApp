@@ -1,0 +1,77 @@
+.header {
+    background: url("../img/bg.png") top;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.hero {
+    width: 75%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__content {
+        margin-top: 5rem;
+    }
+
+    &__img-container {
+        position: relative;
+        height: 60rem;
+    }
+
+    &__img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20rem;
+    }
+
+    &__btn {
+        display: flex;
+    }
+}
+
+.circle {
+    &--1 {
+        position: absolute;
+        top: 5rem;
+        left: 32rem;
+        width: 3.5rem;
+        animation-name: movement-1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    &--2 {
+        position: absolute;
+        top: 41rem;
+        left: 33rem;
+        width: 4rem;
+        animation-name: movement-2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    &--3 {
+        position: absolute;
+        top: 19rem;
+        left: 2rem;
+        width: 6rem;
+        animation-name: movement-4;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    &--4 {
+        position: absolute;
+        top: 17rem;
+        left: 35rem;
+        width: 5.3rem;
+        animation-name: movement-3;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
+}
