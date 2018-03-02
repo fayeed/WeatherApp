@@ -22,4 +22,16 @@
     width: 80%;
     margin: 0 auto;
     border-bottom: .5px solid var(--color-dark-blue-4);
+    @include bp-small {
+        width: 90%;
+    }
+    @include bp-xl {
+        width: 80%;
+    }
+    @include bp-xl-2 {
+         width: 70%;
+    }
+    @include bp-xl-3 {
+        width: 60%;
+    }
 }

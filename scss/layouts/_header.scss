@@ -5,12 +5,12 @@
     width: 100%;
     position: relative;
 
-    @include respond-to($tablet-portrait) {
-        height: 90vh;
+    @include bp-large {
+        height: 100vh;
     }
 
-    @include respond-to($phone) {
-        height: 70vh;
+    @include bp-small {
+        height: 80vh;
     }
 }
 
@@ -21,19 +21,32 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @include respond-to($tablet-landscape) {
-        width: 100%;
-    }
-
-    @include respond-to($tablet-portrait) {
+    @include bp-large {
         width: 90%;
         margin: 0 auto;
     }
 
+    @include bp-xl {
+        width: 80%;
+    }
+
+    @include bp-xl-2 {
+        width: 70%;
+    }
+    @include bp-xl-3 {
+        width: 60%;
+    }
+
     &__content {
         margin-top: 5rem;
-        @include respond-to($phone) {
-            margin-top: -10rem;
+
+        @include bp-small {
+            margin-top: -15rem;
+            text-align: center;
+        }
+        @include bp-large {
+            margin-top: 0rem;
+            text-align: left;
         }
     }
 
@@ -41,12 +54,13 @@
         position: relative;
         height: 60rem;
 
-        @include respond-to($tablet-portrait) {
-            height: 40rem;
-        }
 
-        @include respond-to($phone) {
+        @include bp-small {
             display: none;
+        }
+        @include bp-large {
+            display: block;
+            height: 40rem;
         }
     }
 
@@ -55,13 +69,19 @@
         left: 50%;
         transform: translateX(-50%);
         width: 20rem;
-        @include respond-to($tablet-portrait) {
+        @include bp-large {
             width: 15rem;
         }
     }
 
     &__btn {
         display: flex;
+        @include bp-small {
+            justify-content: center;
+        }
+        @include bp-large {
+            justify-content: left;
+        }
     }
 }
 
@@ -75,9 +95,14 @@
         animation-duration: 3s;
         animation-iteration-count: infinite;
 
-        @include respond-to($tablet-portrait){
+        @include bp-large{
             top: 5rem;
             left: 27rem;
+            width: 3rem;
+        }
+        @include bp-xl{
+            top: 5rem;
+            left: 29rem;
             width: 3rem;
         }
     }
@@ -90,9 +115,14 @@
         animation-name: movement-2;
         animation-duration: 5s;
         animation-iteration-count: infinite;
-        @include respond-to($tablet-portrait){
+        @include bp-large{
             top: 31rem;
             left: 27rem;
+            width: 3.5rem;
+        }
+        @include bp-xl{
+            top: 31rem;
+            left: 29rem;
             width: 3.5rem;
         }
     }
@@ -105,7 +135,12 @@
         animation-name: movement-4;
         animation-duration: 10s;
         animation-iteration-count: infinite;
-        @include respond-to($tablet-portrait){
+        @include bp-large{
+            top: 17rem;
+            left: 0rem;
+            width: 5rem;
+        }
+        @include bp-xl {
             top: 17rem;
             left: 4rem;
             width: 5rem;
@@ -120,9 +155,14 @@
         animation-name: movement-3;
         animation-duration: 7s;
         animation-iteration-count: infinite;
-        @include respond-to($tablet-portrait){
+        @include bp-large{
             top: 15rem;
             left: 29rem;
+            width: 4.7rem;
+        }
+        @include bp-xl{
+            top: 15rem;
+            left: 31rem;
             width: 4.7rem;
         }
     }

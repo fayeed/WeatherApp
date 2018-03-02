@@ -2,15 +2,18 @@
     width: 60%;
     margin: 0 auto;
 
-    @include respond-to($phone){
+    @include bp-small{
         width: 90%;
         margin: 0 auto;
+        text-align: center;
     }
 
     &__btns {
         display: flex;
         justify-content: left;
-
+        @include bp-small {
+            justify-content: center;
+        }
     }
 
     &__phones {
@@ -18,8 +21,20 @@
         position: relative;
         left: 30%;
 
-        @include respond-to($phone){
+        @include bp-small{
             left: 25%;
+        }
+        @include bp-small-2 {
+            left: 30%;
+        }
+        @include bp-small-3 {
+            left: 35%;
+        }
+        @include bp-large {
+            left: 30%;
+        }
+        @include bp-xl-3 {
+            left: 20%;
         }
 
         &--1 {
@@ -30,7 +45,7 @@
             left: -12rem;
             clip: rect(0, 16rem, 18rem, 0);
 
-            @include respond-to($phone){
+            @include bp-small{
                 top: 80%;
             }
         }
@@ -42,8 +57,11 @@
             left: 0;
             z-index: 50;
             clip: rect(0, 17rem, 30rem, 0);
-            @include respond-to($phone){
+            @include bp-small{
                 top: 0;
+            }
+            @include bp-xl-2 {
+                top: 30%
             }
         }
 
@@ -54,7 +72,7 @@
             top: 170%;
             left: 12rem;
             clip: rect(0, 16rem, 18rem, 0);
-            @include respond-to($phone){
+            @include bp-small{
                 top: 80%;
             }
         }

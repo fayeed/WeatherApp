@@ -3,12 +3,14 @@
     grid-column-gap: 5rem;
     grid-row-gap: 10rem;
 
-    @include respond-to($tablet-portrait) {
-        grid-column-gap: 0;
+    @include bp-small {
+        grid-row-gap: 10rem;
+        justify-content: center;
     }
-
-    @include respond-to($phone) {
-        grid-row-gap: 5rem;
+    @include bp-large {
+        grid-row-gap: 10rem;
+        grid-column-gap: 5rem;
+        justify-content: left;
     }
 
     &--80 {
@@ -26,22 +28,31 @@
 
     &--2 {
         grid-template-columns: repeat(2, 1fr);
-        @include respond-to($phone) {
+        @include bp-small {
             grid-template-columns: 1fr;
+        }
+        @include bp-large {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
     &--3 {
         grid-template-columns: repeat(3, 1fr);
-        @include respond-to($phone) {
+        @include bp-small {
             grid-template-columns: 1fr;
+        }
+        @include bp-large {
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 
     &--4 {
         grid-template-columns: repeat(4, 1fr);
-        @include respond-to($phone) {
+        @include bp-small {
             grid-template-columns: 1fr;
+        }
+        @include bp-large {
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 

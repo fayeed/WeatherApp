@@ -8,12 +8,24 @@ body {
 .main-text {
     font-size: 4rem;
     color: var(--color-white);
+    @include bp-small {
+        font-size: 3.5rem;
+    }
+    @include bp-small-3 {
+        font-size: 5rem;
+    }
+    @include bp-large {
+        font-size: 4rem;
+    }
 }
 
 .sub-text {
     font-size: 1.2rem;
     color: var(--color-white);
     margin-bottom: 4rem;
+    @include bp-small {
+        font-size: 1.8rem;
+    }
 }
 
 .secondary_text {

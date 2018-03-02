@@ -2,16 +2,43 @@
     position: relative;
     height: 50rem;
     margin: 8rem;
+    @include bp-small {
+        height: 40rem;
+    }
+
     &__img {
         position: absolute;
         width: 21rem;
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .2);
         transform: translate(-50%, 0);
+
+        @include bp-small {
+            width: 14rem;
+        }
+        @include  bp-large {
+            width: 21rem;
+        }
     }
 
     &__img--1 {
         top: 5%;
         left: 25%;
+        @include bp-small {
+            top: 8%;
+            left: -60%;
+        }
+        @include bp-small-2 {
+            top: 8%;
+            left: -30%;
+        }
+        @include bp-small-3 {
+            top: 8%;
+            left: -0%;
+        }
+        @include bp-large {
+            top: 5%;
+            left: 25%;
+        }
     }
 
     &__img--2 {
@@ -19,10 +46,34 @@
         top: 0;
         left: 50%;
         z-index: 30;
+        @include bp-small {
+            width: 18rem;
+        }
+        @include  bp-large {
+            width: 24rem;
+            top: 0;
+            left: 50%;
+        }
     }
 
     &__img--3 {
         top: 5%;
         left: 75%;
+        @include bp-small {
+            top: 8%;
+            left: 160%;
+        }
+        @include bp-small-2 {
+            top: 8%;
+            left: 130%;
+        }
+        @include bp-small-3 {
+            top: 8%;
+            left: 100%;
+        }
+        @include bp-large {
+            top: 5%;
+            left: 75%;
+        }
     }
 }

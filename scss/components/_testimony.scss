@@ -1,6 +1,9 @@
 .testimony {
     text-align: left;
     position: relative;
+    @include bp-large {
+
+    }
     &__quote {
         font-size: 8rem;
         font-weight: 700;

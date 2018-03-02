@@ -4,22 +4,32 @@
         height: 50rem;
         position: relative;
 
-        @include respond-to($phone) {
-            height: 35rem;
+        @include bp-small {
+            height: 25rem;
             &--r {
                 grid-row: 1;
             }
         }
-
-
+        @include bp-large {
+            &--r {
+                grid-row: 1;
+            }
+        }
     }
 
     &__content {
        text-align: left;
-        @include respond-to($phone) {
+        margin-bottom: 5rem;
+        @include bp-small {
             text-align: center;
             &--r {
                 grid-row: 2;
+            }
+        }
+        @include bp-large {
+            text-align: center;
+            &--r {
+                grid-row: 1;
             }
         }
     }
@@ -30,7 +40,7 @@
 
         &--l {
             left: 10%;
-            @include respond-to($phone) {
+            @include bp-small {
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -38,7 +48,7 @@
 
         &--r{
             right: 10%;
-            @include respond-to($phone) {
+            @include bp-small {
                 right: 50%;
                 transform: translateX(50%);
             }
@@ -73,16 +83,35 @@
         animation-name: movement-4;
         animation-duration: 10s;
         animation-iteration-count: infinite;
-        @include respond-to($phone){
+        @include bp-small{
             width: 5rem;
+            top: 10rem;
+            right: 0rem;
+        }
+        @include bp-small-2{
+            width: 5rem;
+            top: 10rem;
+            right: 3rem;
+        }
+        @include bp-small-3{
+            width: 5rem;
+            top: 10rem;
+            right: 6rem;
+        }
+        @include bp-med{
+            width: 6rem;
+            top: 10rem;
+            right: 9rem;
+        }
+        @include bp-large{
+            width: 6rem;
             top: 10rem;
             right: 4rem;
         }
-
-        @include respond-to($tablet-portrait){
-            width: 5.5rem;
+        @include bp-xl-3{
+            width: 6rem;
             top: 10rem;
-            right: 12rem;
+            right: 6rem;
         }
     }
 
@@ -94,16 +123,36 @@
         animation-name: movement-2;
         animation-duration: 5s;
         animation-iteration-count: infinite;
-        @include respond-to($phone){
+        @include bp-small{
             width: 4.5rem;
             top: 20rem;
-            left: 4rem;
+            left: 0rem;
         }
-        @include respond-to($tablet-portrait){
-             width: 5rem;
-             top: 20rem;
-             left: 0rem;
-         }
+        @include bp-small-2{
+            width: 4.5rem;
+            top: 20rem;
+            left: 2rem;
+        }
+        @include bp-small-3{
+            width: 4.5rem;
+            top: 20rem;
+            left: 7rem;
+        }
+        @include bp-med{
+            width: 5.5rem;
+            top: 20rem;
+            left: 10rem;
+        }
+        @include bp-large{
+            width: 5.5rem;
+            top: 20rem;
+            left: 5rem;
+        }
+        @include bp-xl-3{
+            width: 5.5rem;
+            top: 20rem;
+            left: 7rem;
+        }
     }
 
     &--7 {
@@ -114,15 +163,35 @@
         animation-name: movement-1;
         animation-duration: 15s;
         animation-iteration-count: infinite;
-        @include respond-to($phone){
+        @include bp-small{
             width: 5rem;
             top: 8rem;
-            right: 4rem;
-        }
-        @include respond-to($tablet-portrait){
-            width: 5.5rem;
-            top: 8rem;
             right: 0rem;
+        }
+        @include bp-small-2{
+            width: 5rem;
+            top: 8rem;
+            right: 3rem;
+        }
+        @include bp-small-3{
+            width: 5rem;
+            top: 8rem;
+            right: 8rem;
+        }
+        @include bp-med{
+            width: 6rem;
+            top: 8rem;
+            right: 10rem;
+        }
+        @include bp-large{
+            width: 6rem;
+            top: 8rem;
+            right: 5rem;
+        }
+        @include bp-xl-3 {
+            width: 6rem;
+            top: 8rem;
+            right: 7rem;
         }
     }
 
@@ -134,16 +203,35 @@
         animation-name: movement-4;
         animation-duration: 6s;
         animation-iteration-count: infinite;
-        @include respond-to($phone){
+        @include bp-small{
             width: 4.5rem;
             top: 21rem;
-            left: 4rem;
+            left: 0rem;
         }
-
-        @include respond-to($tablet-portrait){
-            width: 5rem;
+        @include bp-small-2{
+            width: 4.5rem;
             top: 21rem;
-            left: 10rem;
+            left: 2rem;
+        }
+        @include bp-small-3{
+            width: 4.5rem;
+            top: 21rem;
+            left: 7rem;
+        }
+        @include bp-med{
+            width: 5.5rem;
+            top: 21rem;
+            left: 11rem;
+        }
+        @include bp-large{
+            width: 5.5rem;
+            top: 21rem;
+            left: 5rem;
+        }
+        @include bp-xl-3{
+            width: 5.5rem;
+            top: 21rem;
+            left: 7rem;
         }
     }
 
@@ -155,16 +243,35 @@
         animation-name: movement-2;
         animation-duration: 6s;
         animation-iteration-count: infinite;
-        @include respond-to($phone){
+        @include bp-small{
             width: 4rem;
             top: 10rem;
-            right: 4.5rem;
+            right: 0rem;
         }
-
-        @include respond-to($tablet-portrait){
-            width: 4.5rem;
+        @include bp-small-2{
+            width: 4rem;
+            top: 10rem;
+            right: 3rem;
+        }
+        @include bp-small-3{
+            width: 4rem;
+            top: 10rem;
+            right: 7rem;
+        }
+        @include bp-med{
+            width: 5rem;
             top: 10rem;
             right: 12rem;
+        }
+        @include bp-large{
+            width: 5rem;
+            top: 10rem;
+            right: 5rem;
+        }
+        @include bp-xl-3{
+            width: 5rem;
+            top: 10rem;
+            right: 8rem;
         }
     }
 
@@ -176,16 +283,35 @@
         animation-name: movement-3;
         animation-duration: 9s;
         animation-iteration-count: infinite;
-        @include respond-to($phone){
+        @include bp-small{
             width: 4.5rem;
             top: 22rem;
-            left: 4rem;
+            left: 0rem;
         }
-
-        @include respond-to($tablet-portrait){
+        @include bp-small-2{
             width: 4.5rem;
             top: 22rem;
-            left: 1rem;
+            left: 2rem;
+        }
+        @include bp-small-3{
+            width: 4.5rem;
+            top: 22rem;
+            left: 8rem;
+        }
+        @include bp-med{
+            width: 5.5rem;
+            top: 22rem;
+            left: 11rem;
+        }
+        @include bp-large{
+            width: 5.5rem;
+            top: 22rem;
+            left: 5rem;
+        }
+        @include bp-xl-3{
+            width: 5.5rem;
+            top: 22rem;
+            left: 8rem;
         }
     }
 }

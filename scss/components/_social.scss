@@ -2,8 +2,11 @@
     display: flex;
     align-content: right;
 
-    @include respond-to($phone) {
+    @include bp-small {
         display: none;
+    }
+    @include  bp-large {
+        display: block;
     }
 
     &__list {
