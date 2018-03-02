@@ -2,6 +2,11 @@
     width: 60%;
     margin: 0 auto;
 
+    @include respond-to($phone){
+        width: 90%;
+        margin: 0 auto;
+    }
+
     &__btns {
         display: flex;
         justify-content: left;
@@ -13,6 +18,10 @@
         position: relative;
         left: 30%;
 
+        @include respond-to($phone){
+            left: 25%;
+        }
+
         &--1 {
             filter: blur(.3rem);
             width: 16rem;
@@ -20,6 +29,10 @@
             top: 170%;
             left: -12rem;
             clip: rect(0, 16rem, 18rem, 0);
+
+            @include respond-to($phone){
+                top: 80%;
+            }
         }
 
         &--2 {
@@ -29,6 +42,9 @@
             left: 0;
             z-index: 50;
             clip: rect(0, 17rem, 30rem, 0);
+            @include respond-to($phone){
+                top: 0;
+            }
         }
 
         &--3 {
@@ -38,11 +54,14 @@
             top: 170%;
             left: 12rem;
             clip: rect(0, 16rem, 18rem, 0);
+            @include respond-to($phone){
+                top: 80%;
+            }
         }
     }
 }
 
-.btn {
+.btns {
     width: 14rem;
     padding: 0;
 }

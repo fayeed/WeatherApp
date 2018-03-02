@@ -1,9 +1,17 @@
 .header {
-    background: url("../img/bg.png") top;
+    background: url("../img/bg.png") bottom;
     background-size: cover;
     height: 100vh;
     width: 100%;
     position: relative;
+
+    @include respond-to($tablet-portrait) {
+        height: 90vh;
+    }
+
+    @include respond-to($phone) {
+        height: 70vh;
+    }
 }
 
 .hero {
@@ -13,13 +21,33 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
+    @include respond-to($tablet-landscape) {
+        width: 100%;
+    }
+
+    @include respond-to($tablet-portrait) {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     &__content {
         margin-top: 5rem;
+        @include respond-to($phone) {
+            margin-top: -10rem;
+        }
     }
 
     &__img-container {
         position: relative;
         height: 60rem;
+
+        @include respond-to($tablet-portrait) {
+            height: 40rem;
+        }
+
+        @include respond-to($phone) {
+            display: none;
+        }
     }
 
     &__img {
@@ -27,6 +55,9 @@
         left: 50%;
         transform: translateX(-50%);
         width: 20rem;
+        @include respond-to($tablet-portrait) {
+            width: 15rem;
+        }
     }
 
     &__btn {
@@ -43,6 +74,12 @@
         animation-name: movement-1;
         animation-duration: 3s;
         animation-iteration-count: infinite;
+
+        @include respond-to($tablet-portrait){
+            top: 5rem;
+            left: 27rem;
+            width: 3rem;
+        }
     }
 
     &--2 {
@@ -53,6 +90,11 @@
         animation-name: movement-2;
         animation-duration: 5s;
         animation-iteration-count: infinite;
+        @include respond-to($tablet-portrait){
+            top: 31rem;
+            left: 27rem;
+            width: 3.5rem;
+        }
     }
 
     &--3 {
@@ -63,6 +105,11 @@
         animation-name: movement-4;
         animation-duration: 10s;
         animation-iteration-count: infinite;
+        @include respond-to($tablet-portrait){
+            top: 17rem;
+            left: 4rem;
+            width: 5rem;
+        }
     }
 
     &--4 {
@@ -73,5 +120,10 @@
         animation-name: movement-3;
         animation-duration: 7s;
         animation-iteration-count: infinite;
+        @include respond-to($tablet-portrait){
+            top: 15rem;
+            left: 29rem;
+            width: 4.7rem;
+        }
     }
 }

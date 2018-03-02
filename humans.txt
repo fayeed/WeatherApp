@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Fayeed
 
 # THANKS
 
-    <name>
+    Gravpix
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, SASS, HTML5
+    Apache Server Configs, Normalize.css

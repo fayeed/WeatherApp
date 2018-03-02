@@ -2,6 +2,10 @@
     display: flex;
     align-content: right;
 
+    @include respond-to($phone) {
+        display: none;
+    }
+
     &__list {
         display: flex;
         list-style: none;

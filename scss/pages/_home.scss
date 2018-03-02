@@ -1,29 +1,25 @@
 .section_features {
-    text-align: center;
-    width: 60%;
-    margin: 8rem auto;
+    @include main-padding;
 }
 
 .section_widget {
-    text-align: center;
-    width: 60%;
-    margin: 8rem auto;
+    @include main-padding;
 }
 
 .section_screenshots {
-    text-align: center;
-    width: 60%;
-    margin: 8rem auto;
+    @include main-padding;
 }
 
 .section_testimonials {
-    text-align: center;
-    width: 60%;
-    margin: 8rem auto;
+    @include main-padding;
 }
 
 .section_download {
     padding: 5rem 0 5rem 0;
     background-color: var(--color-primary);
     overflow: hidden;
+
+    @include respond-to($phone) {
+
+    }
 }

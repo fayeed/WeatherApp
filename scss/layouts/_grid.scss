@@ -3,9 +3,22 @@
     grid-column-gap: 5rem;
     grid-row-gap: 10rem;
 
+    @include respond-to($tablet-portrait) {
+        grid-column-gap: 0;
+    }
+
+    @include respond-to($phone) {
+        grid-row-gap: 5rem;
+    }
+
     &--80 {
         width: 80%;
         margin: 0 auto;
+
+        @include respond-to($tablet-portrait) {
+            width: 99%;
+            margin: 0 auto;
+        }
     }
     &--60 {
         justify-content: center;
@@ -13,14 +26,23 @@
 
     &--2 {
         grid-template-columns: repeat(2, 1fr);
+        @include respond-to($phone) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &--3 {
         grid-template-columns: repeat(3, 1fr);
+        @include respond-to($phone) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &--4 {
         grid-template-columns: repeat(4, 1fr);
+        @include respond-to($phone) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &--center {
