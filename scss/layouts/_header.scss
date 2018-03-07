@@ -1,16 +1,15 @@
 .header {
     background: url("../img/bg.png") bottom;
-    background-size: cover;
+    //background-size: cover;
     height: 100vh;
     width: 100%;
     position: relative;
 
-    @include bp-large {
-        height: 100vh;
-    }
-
     @include bp-small {
         height: 80vh;
+    }
+    @include bp-large {
+        height: 100vh;
     }
 }
 
