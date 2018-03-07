@@ -1,0 +1,19 @@
+.navigation-mobile {
+    display: none;
+    @include for-big-desktop-up {
+        display: none;
+    }
+}
+
+.nav_burger {
+    display: none;
+    background-color: white;
+    height: 1px;
+    width: 1rem;
+
+
+
+    @include for-phone-only {
+        display: none;
+    }
+}
