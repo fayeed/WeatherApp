@@ -24,57 +24,133 @@ $bp-large-2 : 54.5em;
 $bp-xl : 60em;
 $bp-xl-2 : 67em;
 */
+@-webkit-keyframes movement-1 {
+  0% {
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
+  }
+  50% {
+    -webkit-transform: translate(0, -0.6rem) rotate(-15deg);
+            transform: translate(0, -0.6rem) rotate(-15deg);
+  }
+  100% {
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
+  }
+}
 @keyframes movement-1 {
   0% {
-    transform: translate(0rem, 0rem);
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
   }
   50% {
-    transform: translate(0, -0.6rem) rotate(-15deg);
+    -webkit-transform: translate(0, -0.6rem) rotate(-15deg);
+            transform: translate(0, -0.6rem) rotate(-15deg);
   }
   100% {
-    transform: translate(0rem, 0rem);
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
   }
 }
+
+@-webkit-keyframes movement-2 {
+  0% {
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
+  }
+  50% {
+    -webkit-transform: translate(0, -1rem) rotate(6deg);
+            transform: translate(0, -1rem) rotate(6deg);
+  }
+  100% {
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
+  }
+}
+
 @keyframes movement-2 {
   0% {
-    transform: translate(0rem, 0rem);
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
   }
   50% {
-    transform: translate(0, -1rem) rotate(6deg);
+    -webkit-transform: translate(0, -1rem) rotate(6deg);
+            transform: translate(0, -1rem) rotate(6deg);
   }
   100% {
-    transform: translate(0rem, 0rem);
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
   }
 }
+
+@-webkit-keyframes movement-3 {
+  0% {
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
+  }
+  50% {
+    -webkit-transform: translate(0, -1.5rem) rotate(-8deg);
+            transform: translate(0, -1.5rem) rotate(-8deg);
+  }
+  100% {
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
+  }
+}
+
 @keyframes movement-3 {
   0% {
-    transform: translate(0rem, 0rem);
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
   }
   50% {
-    transform: translate(0, -1.5rem) rotate(-8deg);
+    -webkit-transform: translate(0, -1.5rem) rotate(-8deg);
+            transform: translate(0, -1.5rem) rotate(-8deg);
   }
   100% {
-    transform: translate(0rem, 0rem);
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
   }
 }
+
+@-webkit-keyframes movement-4 {
+  0% {
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
+  }
+  50% {
+    -webkit-transform: translate(0, -1.8rem) rotate(10deg);
+            transform: translate(0, -1.8rem) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
+  }
+}
+
 @keyframes movement-4 {
   0% {
-    transform: translate(0rem, 0rem);
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
   }
   50% {
-    transform: translate(0, -1.8rem) rotate(10deg);
+    -webkit-transform: translate(0, -1.8rem) rotate(10deg);
+            transform: translate(0, -1.8rem) rotate(10deg);
   }
   100% {
-    transform: translate(0rem, 0rem);
+    -webkit-transform: translate(0rem, 0rem);
+            transform: translate(0rem, 0rem);
   }
 }
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
 
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -83,7 +159,8 @@ body {
 *:before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -96,16 +173,19 @@ body {
   font-size: 4rem;
   color: var(--color-white);
 }
+
 @media only screen and (min-width: 22.5em) {
   .main-text {
     font-size: 3.5rem;
   }
 }
+
 @media only screen and (min-width: 39.5em) {
   .main-text {
     font-size: 5rem;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .main-text {
     font-size: 4rem;
@@ -117,6 +197,7 @@ body {
   color: var(--color-white);
   margin-bottom: 4rem;
 }
+
 @media only screen and (min-width: 22.5em) {
   .sub-text {
     font-size: 1.8rem;
@@ -146,6 +227,7 @@ body {
   color: var(--color-white);
   font-weight: 700;
 }
+
 .downloads__sub-text {
   font-size: 1.2rem;
   color: var(--color-white);
@@ -183,10 +265,12 @@ body {
   text-decoration: none;
   font-size: 1.8rem;
 }
+
 .btn-orange {
   background-color: var(--color-orange);
   margin-right: 2rem;
 }
+
 .btn-dark-blue {
   background-color: var(--color-dark-blue-2);
 }
@@ -194,71 +278,96 @@ body {
 .navigation {
   width: 60%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem 0;
 }
+
 @media only screen and (min-width: 22.5em) {
   .navigation {
     width: 90%;
   }
 }
+
 @media only screen and (min-width: 60em) {
   .navigation {
     width: 80%;
   }
 }
+
 @media only screen and (min-width: 67em) {
   .navigation {
     width: 70%;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .navigation {
     width: 60%;
   }
 }
+
 .navigation nav {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 0 15%;
 }
+
 @media only screen and (min-width: 22.5em) {
   .navigation nav {
     display: none;
   }
 }
+
 @media only screen and (min-width: 39.5em) {
   .navigation nav {
     display: block;
     padding: 0 0 0 15%;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .navigation nav {
     padding: 0 10%;
   }
 }
+
 @media only screen and (min-width: 54.5em) {
   .navigation nav {
     padding: 0 15%;
   }
 }
+
 .navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   list-style: none;
 }
+
 .navigation__link:link, .navigation__link:visited {
   color: var(--color-white);
   text-decoration: none;
   font-size: 1.2rem;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
+
 .navigation__link:hover, .navigation__link:active {
-  padding-bottom: 0.5rem;
+  padding-bottom: .5rem;
   border-bottom: 2px solid var(--color-white);
 }
+
 .navigation__icon-text {
   font-size: 1.8rem;
   font-weight: 700;
@@ -267,70 +376,101 @@ body {
 }
 
 .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: right;
+  -ms-flex-line-pack: right;
+      align-content: right;
 }
+
 @media only screen and (min-width: 22.5em) {
   .social {
     display: none;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .social {
     display: block;
   }
 }
+
 .social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
+
 .social__item {
   height: 1.4rem;
   width: 1.4rem;
   margin-right: 3rem;
 }
+
 .social__link {
   width: 100%;
 }
+
 .social__img {
   width: 100%;
 }
+
 .social__img--1 {
-  transition: all 0.2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
+
 .social__img--1:hover {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
+
 .social__img--2 {
-  transition: all 0.2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
+
 .social__img--2:hover {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
+
 .social__img--3 {
-  transition: all 0.2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
+
 .social__img--3:hover {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: left;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .feature__content {
   margin: 0 2rem;
 }
+
 .feature__icon {
   height: 5rem;
   width: 5rem;
 }
+
 .feature__heading {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
+
 .feature__text {
   font-size: 1.2rem;
   color: var(--color-gray-1);
@@ -342,66 +482,80 @@ body {
   height: 50rem;
   margin: 8rem;
 }
+
 @media only screen and (min-width: 22.5em) {
   .widget {
     height: 40rem;
   }
 }
+
 .widget__img {
   position: absolute;
   width: 21rem;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  transform: translate(-50%, 0);
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
+
 @media only screen and (min-width: 22.5em) {
   .widget__img {
     width: 14rem;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .widget__img {
     width: 21rem;
   }
 }
+
 .widget__img--1 {
   top: 5%;
   left: 25%;
 }
+
 @media only screen and (min-width: 22.5em) {
   .widget__img--1 {
     top: 8%;
     left: -60%;
   }
 }
+
 @media only screen and (min-width: 29.75em) {
   .widget__img--1 {
     top: 8%;
     left: -30%;
   }
 }
+
 @media only screen and (min-width: 39.5em) {
   .widget__img--1 {
     top: 8%;
-    left: 0%;
+    left: -0%;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .widget__img--1 {
     top: 5%;
     left: 25%;
   }
 }
+
 .widget__img--2 {
   width: 24rem;
   top: 0;
   left: 50%;
   z-index: 30;
 }
+
 @media only screen and (min-width: 22.5em) {
   .widget__img--2 {
     width: 18rem;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .widget__img--2 {
     width: 24rem;
@@ -409,28 +563,33 @@ body {
     left: 50%;
   }
 }
+
 .widget__img--3 {
   top: 5%;
   left: 75%;
 }
+
 @media only screen and (min-width: 22.5em) {
   .widget__img--3 {
     top: 8%;
     left: 160%;
   }
 }
+
 @media only screen and (min-width: 29.75em) {
   .widget__img--3 {
     top: 8%;
     left: 130%;
   }
 }
+
 @media only screen and (min-width: 39.5em) {
   .widget__img--3 {
     top: 8%;
     left: 100%;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .widget__img--3 {
     top: 5%;
@@ -442,70 +601,90 @@ body {
   height: 50rem;
   position: relative;
 }
+
 @media only screen and (min-width: 22.5em) {
   .screenshots__container {
     height: 25rem;
   }
   .screenshots__container--r {
+    -ms-grid-row: 1;
     grid-row: 1;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .screenshots__container--r {
+    -ms-grid-row: 1;
     grid-row: 1;
   }
 }
+
 .screenshots__content {
   text-align: left;
   margin-bottom: 5rem;
 }
+
 @media only screen and (min-width: 22.5em) {
   .screenshots__content {
     text-align: center;
   }
   .screenshots__content--r {
+    -ms-grid-row: 2;
     grid-row: 2;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .screenshots__content {
     text-align: center;
   }
   .screenshots__content--r {
+    -ms-grid-row: 1;
     grid-row: 1;
   }
 }
+
 .screenshots__img {
   width: 17rem;
   position: absolute;
 }
+
 .screenshots__img--l {
   left: 10%;
 }
+
 @media only screen and (min-width: 22.5em) {
   .screenshots__img--l {
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
+
 .screenshots__img--r {
   right: 10%;
 }
+
 @media only screen and (min-width: 22.5em) {
   .screenshots__img--r {
     right: 50%;
-    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
   }
 }
+
 .screenshots__icon--1 {
   height: 5rem;
 }
+
 .screenshots__icon--2 {
   height: 5rem;
 }
+
 .screenshots__icon--3 {
   height: 5rem;
 }
+
 .screenshots__icon--4 {
   height: 5rem;
 }
@@ -515,10 +694,14 @@ body {
   position: absolute;
   top: 12rem;
   right: 15rem;
-  animation-name: movement-4;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: movement-4;
+          animation-name: movement-4;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
+
 @media only screen and (min-width: 22.5em) {
   .circle--5 {
     width: 5rem;
@@ -526,6 +709,7 @@ body {
     right: 0rem;
   }
 }
+
 @media only screen and (min-width: 29.75em) {
   .circle--5 {
     width: 5rem;
@@ -533,6 +717,7 @@ body {
     right: 3rem;
   }
 }
+
 @media only screen and (min-width: 39.5em) {
   .circle--5 {
     width: 5rem;
@@ -540,6 +725,7 @@ body {
     right: 6rem;
   }
 }
+
 @media only screen and (min-width: 46.8em) {
   .circle--5 {
     width: 6rem;
@@ -547,6 +733,7 @@ body {
     right: 9rem;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .circle--5 {
     width: 6rem;
@@ -554,6 +741,7 @@ body {
     right: 4rem;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .circle--5 {
     width: 6rem;
@@ -561,15 +749,20 @@ body {
     right: 6rem;
   }
 }
+
 .circle--6 {
   width: 5.5rem;
   position: absolute;
   top: 24rem;
   left: 0rem;
-  animation-name: movement-2;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: movement-2;
+          animation-name: movement-2;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
+
 @media only screen and (min-width: 22.5em) {
   .circle--6 {
     width: 4.5rem;
@@ -577,6 +770,7 @@ body {
     left: 0rem;
   }
 }
+
 @media only screen and (min-width: 29.75em) {
   .circle--6 {
     width: 4.5rem;
@@ -584,6 +778,7 @@ body {
     left: 2rem;
   }
 }
+
 @media only screen and (min-width: 39.5em) {
   .circle--6 {
     width: 4.5rem;
@@ -591,6 +786,7 @@ body {
     left: 7rem;
   }
 }
+
 @media only screen and (min-width: 46.8em) {
   .circle--6 {
     width: 5.5rem;
@@ -598,6 +794,7 @@ body {
     left: 10rem;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .circle--6 {
     width: 5.5rem;
@@ -605,6 +802,7 @@ body {
     left: 5rem;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .circle--6 {
     width: 5.5rem;
@@ -612,15 +810,20 @@ body {
     left: 7rem;
   }
 }
+
 .circle--7 {
   width: 6rem;
   position: absolute;
   top: 9rem;
   right: 1rem;
-  animation-name: movement-1;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: movement-1;
+          animation-name: movement-1;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
+
 @media only screen and (min-width: 22.5em) {
   .circle--7 {
     width: 5rem;
@@ -628,6 +831,7 @@ body {
     right: 0rem;
   }
 }
+
 @media only screen and (min-width: 29.75em) {
   .circle--7 {
     width: 5rem;
@@ -635,6 +839,7 @@ body {
     right: 3rem;
   }
 }
+
 @media only screen and (min-width: 39.5em) {
   .circle--7 {
     width: 5rem;
@@ -642,6 +847,7 @@ body {
     right: 8rem;
   }
 }
+
 @media only screen and (min-width: 46.8em) {
   .circle--7 {
     width: 6rem;
@@ -649,6 +855,7 @@ body {
     right: 10rem;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .circle--7 {
     width: 6rem;
@@ -656,6 +863,7 @@ body {
     right: 5rem;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .circle--7 {
     width: 6rem;
@@ -663,15 +871,20 @@ body {
     right: 7rem;
   }
 }
+
 .circle--8 {
   width: 5.5rem;
   position: absolute;
   top: 21rem;
   left: 15rem;
-  animation-name: movement-4;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: movement-4;
+          animation-name: movement-4;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
+
 @media only screen and (min-width: 22.5em) {
   .circle--8 {
     width: 4.5rem;
@@ -679,6 +892,7 @@ body {
     left: 0rem;
   }
 }
+
 @media only screen and (min-width: 29.75em) {
   .circle--8 {
     width: 4.5rem;
@@ -686,6 +900,7 @@ body {
     left: 2rem;
   }
 }
+
 @media only screen and (min-width: 39.5em) {
   .circle--8 {
     width: 4.5rem;
@@ -693,6 +908,7 @@ body {
     left: 7rem;
   }
 }
+
 @media only screen and (min-width: 46.8em) {
   .circle--8 {
     width: 5.5rem;
@@ -700,6 +916,7 @@ body {
     left: 11rem;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .circle--8 {
     width: 5.5rem;
@@ -707,6 +924,7 @@ body {
     left: 5rem;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .circle--8 {
     width: 5.5rem;
@@ -714,15 +932,20 @@ body {
     left: 7rem;
   }
 }
+
 .circle--9 {
   width: 5rem;
   position: absolute;
   top: 10rem;
   right: 16rem;
-  animation-name: movement-2;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: movement-2;
+          animation-name: movement-2;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
+
 @media only screen and (min-width: 22.5em) {
   .circle--9 {
     width: 4rem;
@@ -730,6 +953,7 @@ body {
     right: 0rem;
   }
 }
+
 @media only screen and (min-width: 29.75em) {
   .circle--9 {
     width: 4rem;
@@ -737,6 +961,7 @@ body {
     right: 3rem;
   }
 }
+
 @media only screen and (min-width: 39.5em) {
   .circle--9 {
     width: 4rem;
@@ -744,6 +969,7 @@ body {
     right: 7rem;
   }
 }
+
 @media only screen and (min-width: 46.8em) {
   .circle--9 {
     width: 5rem;
@@ -751,6 +977,7 @@ body {
     right: 12rem;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .circle--9 {
     width: 5rem;
@@ -758,6 +985,7 @@ body {
     right: 5rem;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .circle--9 {
     width: 5rem;
@@ -765,15 +993,20 @@ body {
     right: 8rem;
   }
 }
+
 .circle--10 {
   width: 5.5rem;
   position: absolute;
   top: 24rem;
   left: 1rem;
-  animation-name: movement-3;
-  animation-duration: 9s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: movement-3;
+          animation-name: movement-3;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
+
 @media only screen and (min-width: 22.5em) {
   .circle--10 {
     width: 4.5rem;
@@ -781,6 +1014,7 @@ body {
     left: 0rem;
   }
 }
+
 @media only screen and (min-width: 29.75em) {
   .circle--10 {
     width: 4.5rem;
@@ -788,6 +1022,7 @@ body {
     left: 2rem;
   }
 }
+
 @media only screen and (min-width: 39.5em) {
   .circle--10 {
     width: 4.5rem;
@@ -795,6 +1030,7 @@ body {
     left: 8rem;
   }
 }
+
 @media only screen and (min-width: 46.8em) {
   .circle--10 {
     width: 5.5rem;
@@ -802,6 +1038,7 @@ body {
     left: 11rem;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .circle--10 {
     width: 5.5rem;
@@ -809,6 +1046,7 @@ body {
     left: 5rem;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .circle--10 {
     width: 5.5rem;
@@ -821,25 +1059,30 @@ body {
   text-align: left;
   position: relative;
 }
+
 .testimony__quote {
   font-size: 8rem;
   font-weight: 700;
   color: var(--color-primary);
 }
+
 .testimony__quote--1 {
   position: absolute;
   top: -5rem;
   left: 0;
 }
+
 .testimony__quote--2 {
   position: absolute;
   top: 5rem;
   left: 90%;
 }
+
 .testimony__main {
   font-size: 1.8rem;
   font-weight: 300;
 }
+
 .testimony__cite {
   display: block;
   font-size: 1.2rem;
@@ -850,6 +1093,7 @@ body {
   width: 60%;
   margin: 0 auto;
 }
+
 @media only screen and (min-width: 22.5em) {
   .downloads {
     width: 90%;
@@ -857,58 +1101,76 @@ body {
     text-align: center;
   }
 }
+
 .downloads__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
+
 @media only screen and (min-width: 22.5em) {
   .downloads__btns {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
+
 .downloads__phones {
   height: 6rem;
   position: relative;
   left: 30%;
 }
+
 @media only screen and (min-width: 22.5em) {
   .downloads__phones {
     left: 25%;
   }
 }
+
 @media only screen and (min-width: 29.75em) {
   .downloads__phones {
     left: 30%;
   }
 }
+
 @media only screen and (min-width: 39.5em) {
   .downloads__phones {
     left: 35%;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .downloads__phones {
     left: 30%;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .downloads__phones {
     left: 20%;
   }
 }
+
 .downloads__phones--1 {
-  filter: blur(0.3rem);
+  -webkit-filter: blur(0.3rem);
+          filter: blur(0.3rem);
   width: 16rem;
   position: absolute;
   top: 170%;
   left: -12rem;
   clip: rect(0, 16rem, 18rem, 0);
 }
+
 @media only screen and (min-width: 22.5em) {
   .downloads__phones--1 {
     top: 80%;
   }
 }
+
 .downloads__phones--2 {
   width: 17rem;
   position: absolute;
@@ -917,24 +1179,29 @@ body {
   z-index: 50;
   clip: rect(0, 17rem, 30rem, 0);
 }
+
 @media only screen and (min-width: 22.5em) {
   .downloads__phones--2 {
     top: 0;
   }
 }
+
 @media only screen and (min-width: 67em) {
   .downloads__phones--2 {
     top: 30%;
   }
 }
+
 .downloads__phones--3 {
-  filter: blur(0.3rem);
+  -webkit-filter: blur(0.3rem);
+          filter: blur(0.3rem);
   width: 16rem;
   position: absolute;
   top: 170%;
   left: 12rem;
   clip: rect(0, 16rem, 18rem, 0);
 }
+
 @media only screen and (min-width: 22.5em) {
   .downloads__phones--3 {
     top: 80%;
@@ -947,78 +1214,113 @@ body {
 }
 
 .row {
+  display: -ms-grid;
   display: grid;
   grid-column-gap: 5rem;
   grid-row-gap: 10rem;
 }
+
 @media only screen and (min-width: 22.5em) {
   .row {
     grid-row-gap: 10rem;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .row {
     grid-row-gap: 10rem;
     grid-column-gap: 5rem;
-    justify-content: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
+
 .row--80 {
   width: 80%;
   margin: 0 auto;
 }
+
 @media only screen and (max-width: 767px) {
   .row--80 {
     width: 99%;
     margin: 0 auto;
   }
 }
+
 .row--60 {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .row--2 {
-  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
+
 @media only screen and (min-width: 22.5em) {
   .row--2 {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .row--2 {
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
+
 .row--3 {
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
+
 @media only screen and (min-width: 22.5em) {
   .row--3 {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .row--3 {
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
+
 .row--4 {
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
 }
+
 @media only screen and (min-width: 22.5em) {
   .row--4 {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .row--4 {
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
+
 .row--center {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header {
@@ -1026,12 +1328,16 @@ body {
   height: 100vh;
   width: 100%;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 @media only screen and (min-width: 22.5em) {
   .header {
     height: 80vh;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .header {
     height: 100vh;
@@ -1043,81 +1349,104 @@ body {
   position: absolute;
   top: 70%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
+
 @media only screen and (min-width: 50em) {
   .hero {
     width: 90%;
     margin: 0 auto;
   }
 }
+
 @media only screen and (min-width: 60em) {
   .hero {
     width: 80%;
   }
 }
+
 @media only screen and (min-width: 67em) {
   .hero {
     width: 70%;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .hero {
     width: 60%;
   }
 }
+
 .hero__content {
   margin-top: 5rem;
 }
+
 @media only screen and (min-width: 22.5em) {
   .hero__content {
     margin-top: -15rem;
     text-align: center;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .hero__content {
     margin-top: 0rem;
     text-align: left;
   }
 }
+
 .hero__img-container {
   position: relative;
   height: 60rem;
 }
+
 @media only screen and (min-width: 22.5em) {
   .hero__img-container {
     display: none;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .hero__img-container {
     display: block;
     height: 40rem;
   }
 }
+
 .hero__img {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 20rem;
 }
+
 @media only screen and (min-width: 50em) {
   .hero__img {
     width: 15rem;
   }
 }
+
 .hero__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 @media only screen and (min-width: 22.5em) {
   .hero__btn {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .hero__btn {
-    justify-content: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
@@ -1126,10 +1455,14 @@ body {
   top: 5rem;
   left: 32rem;
   width: 3.5rem;
-  animation-name: movement-1;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: movement-1;
+          animation-name: movement-1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
+
 @media only screen and (min-width: 50em) {
   .circle--1 {
     top: 5rem;
@@ -1137,6 +1470,7 @@ body {
     width: 3rem;
   }
 }
+
 @media only screen and (min-width: 60em) {
   .circle--1 {
     top: 5rem;
@@ -1144,15 +1478,20 @@ body {
     width: 3rem;
   }
 }
+
 .circle--2 {
   position: absolute;
   top: 41rem;
   left: 33rem;
   width: 4rem;
-  animation-name: movement-2;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: movement-2;
+          animation-name: movement-2;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
+
 @media only screen and (min-width: 50em) {
   .circle--2 {
     top: 31rem;
@@ -1160,6 +1499,7 @@ body {
     width: 3.5rem;
   }
 }
+
 @media only screen and (min-width: 60em) {
   .circle--2 {
     top: 31rem;
@@ -1167,15 +1507,20 @@ body {
     width: 3.5rem;
   }
 }
+
 .circle--3 {
   position: absolute;
   top: 19rem;
   left: 2rem;
   width: 6rem;
-  animation-name: movement-4;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: movement-4;
+          animation-name: movement-4;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
+
 @media only screen and (min-width: 50em) {
   .circle--3 {
     top: 17rem;
@@ -1183,6 +1528,7 @@ body {
     width: 5rem;
   }
 }
+
 @media only screen and (min-width: 60em) {
   .circle--3 {
     top: 17rem;
@@ -1190,15 +1536,20 @@ body {
     width: 5rem;
   }
 }
+
 .circle--4 {
   position: absolute;
   top: 17rem;
   left: 35rem;
   width: 5.3rem;
-  animation-name: movement-3;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: movement-3;
+          animation-name: movement-3;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
+
 @media only screen and (min-width: 50em) {
   .circle--4 {
     top: 15rem;
@@ -1206,6 +1557,7 @@ body {
     width: 4.7rem;
   }
 }
+
 @media only screen and (min-width: 60em) {
   .circle--4 {
     top: 15rem;
@@ -1219,6 +1571,7 @@ body {
   background-color: var(--color-dark-blue-1);
   text-align: right;
 }
+
 .footer__text {
   color: var(--color-dark-blue-4);
   font-size: 1.2rem;
@@ -1238,21 +1591,25 @@ body {
   margin: 0 auto;
   border-bottom: 0.5px solid var(--color-dark-blue-4);
 }
+
 @media only screen and (min-width: 22.5em) {
   .line {
     width: 90%;
   }
 }
+
 @media only screen and (min-width: 60em) {
   .line {
     width: 80%;
   }
 }
+
 @media only screen and (min-width: 67em) {
   .line {
     width: 70%;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .line {
     width: 60%;
@@ -1264,27 +1621,32 @@ body {
   width: 60%;
   margin: 8rem auto;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .section_features {
     width: 80%;
     margin: 8rem auto;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .section_features {
     width: 90%;
   }
 }
+
 @media only screen and (min-width: 60em) {
   .section_features {
     width: 80%;
   }
 }
+
 @media only screen and (min-width: 67em) {
   .section_features {
     width: 70%;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .section_features {
     width: 60%;
@@ -1296,27 +1658,32 @@ body {
   width: 60%;
   margin: 8rem auto;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .section_widget {
     width: 80%;
     margin: 8rem auto;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .section_widget {
     width: 90%;
   }
 }
+
 @media only screen and (min-width: 60em) {
   .section_widget {
     width: 80%;
   }
 }
+
 @media only screen and (min-width: 67em) {
   .section_widget {
     width: 70%;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .section_widget {
     width: 60%;
@@ -1328,27 +1695,32 @@ body {
   width: 60%;
   margin: 8rem auto;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .section_screenshots {
     width: 80%;
     margin: 8rem auto;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .section_screenshots {
     width: 90%;
   }
 }
+
 @media only screen and (min-width: 60em) {
   .section_screenshots {
     width: 80%;
   }
 }
+
 @media only screen and (min-width: 67em) {
   .section_screenshots {
     width: 70%;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .section_screenshots {
     width: 60%;
@@ -1360,27 +1732,32 @@ body {
   width: 60%;
   margin: 8rem auto;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .section_testimonials {
     width: 80%;
     margin: 8rem auto;
   }
 }
+
 @media only screen and (min-width: 50em) {
   .section_testimonials {
     width: 90%;
   }
 }
+
 @media only screen and (min-width: 60em) {
   .section_testimonials {
     width: 80%;
   }
 }
+
 @media only screen and (min-width: 67em) {
   .section_testimonials {
     width: 70%;
   }
 }
+
 @media only screen and (min-width: 85.375em) {
   .section_testimonials {
     width: 60%;
@@ -1392,3 +1769,4 @@ body {
   background-color: var(--color-primary);
   overflow: hidden;
 }
+/*# sourceMappingURL=main.css.map */

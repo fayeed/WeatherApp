@@ -1,9 +1,10 @@
 .header {
     background: url("../img/bg.png") bottom;
-    //background-size: cover;
     height: 100vh;
     width: 100%;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include bp-small {
         height: 80vh;
@@ -53,7 +54,6 @@
         position: relative;
         height: 60rem;
 
-
         @include bp-small {
             display: none;
         }
@@ -94,12 +94,12 @@
         animation-duration: 3s;
         animation-iteration-count: infinite;
 
-        @include bp-large{
+        @include bp-large {
             top: 5rem;
             left: 27rem;
             width: 3rem;
         }
-        @include bp-xl{
+        @include bp-xl {
             top: 5rem;
             left: 29rem;
             width: 3rem;
@@ -114,12 +114,12 @@
         animation-name: movement-2;
         animation-duration: 5s;
         animation-iteration-count: infinite;
-        @include bp-large{
+        @include bp-large {
             top: 31rem;
             left: 27rem;
             width: 3.5rem;
         }
-        @include bp-xl{
+        @include bp-xl {
             top: 31rem;
             left: 29rem;
             width: 3.5rem;
@@ -134,7 +134,7 @@
         animation-name: movement-4;
         animation-duration: 10s;
         animation-iteration-count: infinite;
-        @include bp-large{
+        @include bp-large {
             top: 17rem;
             left: 0rem;
             width: 5rem;
@@ -154,12 +154,12 @@
         animation-name: movement-3;
         animation-duration: 7s;
         animation-iteration-count: infinite;
-        @include bp-large{
+        @include bp-large {
             top: 15rem;
             left: 29rem;
             width: 4.7rem;
         }
-        @include bp-xl{
+        @include bp-xl {
             top: 15rem;
             left: 31rem;
             width: 4.7rem;
